@@ -132,7 +132,16 @@ public class CreatePanel extends javax.swing.JPanel {
             product.setDesc(txtDescription.getText());
             product.setPrice(txtPrice.getText());
             product.setAvailNum(txtAvailability.getText());
-        JOptionPane.showMessageDialog(this, "Product Information Saved");
+            if(product.getName()== null)
+            {
+        JOptionPane.showMessageDialog(this, "It is null");        
+            } else {
+                
+            }JOptionPane.showMessageDialog(this, "NOT NULL");
+            
+                JOptionPane.showMessageDialog(this, "Product Information Saved");
+            
+//        JOptionPane.showMessageDialog(this, "Product Information Saved");
 
     }//GEN-LAST:event_btnSaveActionPerformed
 
